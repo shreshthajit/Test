@@ -1,0 +1,17 @@
+.footer-main {
+    border-top: 2px solid #E5E5E5;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+
+    .footer{
+        width: 80%;
+
+        .logo-area{
+            img{
+                width: 150px;
+            }
+        }
+    }
+}

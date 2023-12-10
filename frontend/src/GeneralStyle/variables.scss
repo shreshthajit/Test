@@ -1,0 +1,106 @@
+
+// Colors Of App
+$primaryColor: #0093DD;
+$secondaryColor: #F4F4F4;
+$thirdColor: #E43E2B;
+$forthColor: #F76D00;
+$whiteTextColor: #fff;
+$errorColor: #EB5757;
+$dark: #271100;
+$gray3: #828282;
+$gray2: #4f4f4f;
+$gray1: #e0e0e0;
+$bgBtn: #f8f6f4;
+$light: #fff;
+$orange: #f76d00;
+$primary: #009ddd;
+$gray: #f2f7e9;
+$pinkColor: #fef5ed;
+$borderColor: #d4cfcc;
+$lightOrange: #fff7f0;
+$lightSecondary: #f2f7e9;
+$lightPrimary: #ebf9ff;
+$bg: #f4f4f4;
+
+// spacing
+$spacing-md: 35px;
+$spacing-lg: 32px;
+$lineColor: #68584c;
+
+
+// Box Shadow
+$shadow: 2px 2px 2rem 2px rgba(128, 128, 128, 0.103);
+// header height
+$headerHeight: 82px;
+
+
+// Colors With Opacity
+$primaryColorWithOpacity: rgba(80, 200, 120, 0.1);
+$primaryColorWithOpacity2: rgba(80, 200, 120, 0.2);
+$secondaryColorWithOpacity: rgba(13, 33, 20, 0.1);
+$thirdColorWithOpacity: rgba(153, 166, 157, 0.1);
+$errorColorWithOpacity: rgba(235, 87, 87, 0.1);
+
+// Background Color 
+$backgroundColor: #E0E0E0;
+
+// Border
+$borderColor: #E4EDE7;
+$border: 1px solid $borderColor;
+
+
+// Border Radius 
+$primaryRadius: 15px;
+$secondaryRadius: 30px;
+// App width Variable
+$desktopWidth: 1200px;
+
+
+// font family
+
+$fontFamily: 'Nunito Sans', sans-serif;
+
+
+
+
+$radius: 10px;
+
+// font weight
+$fontBold: 700;
+$fontNormalBold: 600;
+$fontNormal: 500;
+$fontRegular: 400;
+$fontLessRegular: 300;
+// font size
+$primaryFontSize: 12px;
+$secondryFontSize: 14px;
+$thirdFontSize: 16px;
+$primaryHeadingFontSize: 32px;
+
+
+
+// Heights and width of input and btns
+$primaryHeight: 50px;
+$primaryWidth: 180px;
+
+
+// Media Querys 
+
+$tabQuery: 780px;
+$mobileQuery: 540px;
+
+// Responsive Padding
+$responsivePadding: 5px;
+$paddingSideOnly: 0px 10px;
+
+
+
+@mixin breakpoint($point) {
+    @if $point ==md {
+
+        // 768px
+        @media (min-width: 48rem) {
+            @content;
+        }
+    }
+}

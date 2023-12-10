@@ -1,0 +1,112 @@
+@import "../../GeneralStyle/variables.scss";
+
+.secondarybutton {
+  font-family: inherit;
+  padding: 12px 25px !important;
+  border-radius: 7px;
+  border-color: $secondaryColor;
+  background-color: $secondaryColor;
+  border: 1px solid $secondaryColor;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    background-color: transparent;
+    // border: 2px solid $secondaryColor;
+    color: $secondaryColor;
+  }
+
+  .secondaryActive {
+    border-color: $dark;
+    background-color: $dark;
+    color: $light;
+  }
+
+  .btnActive {
+    border-color: $secondaryColor;
+    background: $secondaryColor;
+    color: $light;
+  }
+}
+
+.payment {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+
+  h3 {
+    text-align: center;
+  }
+
+  input {
+    padding: 0px 10px;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    height: 45px;
+  }
+
+  main {
+    border: 5px solid lighten 40%;
+    font-weight: 700;
+    margin: 2em auto;
+    padding: 1em;
+    width: 600px;
+  }
+
+  .input-group {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+
+    input {
+      width: 100%;
+      border-radius: 5px;
+      //   border: 1px solid gray;
+    }
+
+    label {
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    svg {
+      position: absolute;
+      right: 10px;
+      bottom: 30%;
+    }
+  }
+
+  .multi-input {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+  }
+
+  small {
+    color: red;
+    font-size: 10px;
+    display: block;
+  }
+
+  .pay-btn{
+    margin-top: 20px;
+    background-color: $primaryColor;
+    padding: 10px 30px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        background-color: transparent;
+        border: 1px solid $primaryColor;
+        color: $primaryColor;
+    }
+  }
+}

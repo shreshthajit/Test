@@ -1,0 +1,357 @@
+@import '../../GeneralStyle/variables.scss';
+
+.portfolio {
+
+
+    .portfolio-top {
+        background-color: #F3F6FF;
+        border: 1px solid gray;
+        border-radius: 10px;
+        margin-top: 50px;
+        padding: 20px 0px;
+        display: flex;
+        align-items: center;
+
+
+        @media screen and (max-width:900px) {
+            margin-top: 20px;
+            .mobile-responsive {
+                display: flex;
+                justify-content: space-between;
+                padding: 0px 20px;
+            }
+        }
+
+
+        .heading {
+            text-align: center;
+            color: gray;
+            font-family: $fontFamily;
+            font-size: larger;
+            margin-top: 5px;
+            margin-bottom: 0px;
+
+            @media screen and (max-width:900px) {
+                text-align: start !important;
+            }
+
+        }
+
+        .value {
+            text-align: center;
+            font-family: $fontFamily;
+            font-size: larger;
+            font-weight: 600;
+            margin-top: 5px;
+            margin-bottom: 0px;
+
+        }
+    }
+
+    .buttons {
+        margin-top: 50px;
+        border: 1px solid gray;
+        background-color: #F8F8F8;
+        width: fit-content;
+        border-radius: 100px;
+
+        .toggle {
+            border-radius: 100px;
+            border: none;
+            background-color: transparent;
+            padding: 7px 20px;
+            font-size: larger;
+            cursor: pointer;
+        }
+
+        .toggle-active {
+            background-color: #0094dc;
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+
+    .ready-to-trade {
+        margin-top: 50px;
+        height: auto;
+        display: flex;
+        align-items: center;
+
+        .left-side {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .trade-start {
+                display: flex;
+                align-items: center;
+                background-color: #F8F8F8;
+                border-radius: 10px;
+                gap: 20px;
+                padding: 0px 10px;
+            }
+        }
+
+        .right-side {
+            border: 2px solid #F4F4F4;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+        }
+    }
+
+}
+
+.wallet {
+
+    .passbook {
+        font-size: 24px;
+        font-weight: bold;
+        font-family: $fontFamily;
+        margin-bottom: 3 px;
+    }
+
+    .wallet-top {
+        background-color: #F3F6FF;
+        border: 1px solid gray;
+        border-radius: 10px;
+        margin-top: 50px;
+        padding: 20px 10px;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width:900px) {
+            margin-top: 20px;
+
+            .mobileresponsive {
+                border-bottom: 1px solid gray;
+                padding: 10px 0px;
+            }
+        }
+
+        .heading {
+            text-align: center;
+            color: gray;
+            font-family: $fontFamily;
+            font-size: larger;
+            margin-top: 5px;
+            margin-bottom: 0px;
+        }
+
+        .value {
+            text-align: center;
+            font-family: $fontFamily;
+            font-size: larger;
+            font-weight: 600;
+            margin-top: 5px;
+            margin-bottom: 0px;
+        }
+
+        .border-class {
+            border-right: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+        }
+
+    }
+
+
+
+    .buttons {
+        margin-top: 50px;
+        border: 1px solid gray;
+        background-color: #F8F8F8;
+        width: fit-content;
+        border-radius: 100px;
+
+        .toggle {
+            border-radius: 100px;
+            border: none;
+            background-color: transparent;
+            padding: 7px 20px;
+            font-size: larger;
+            cursor: pointer;
+        }
+
+        .toggle-active {
+            background-color: #0094dc;
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+
+    .ready-to-trade {
+        display: flex;
+
+        .proceed {
+            margin-top: 50px;
+
+            button {
+                width: 100%;
+                background-color: black;
+                height: 50px;
+                color: #fff;
+                font-weight: 600;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .left-side {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;
+
+            .wellate-card {
+                width: 100%;
+                height: fit-content;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.13) 0px 3px 6px;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+
+                cursor: pointer;
+
+                .wellate-card-inner {
+                    width: 90%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+
+                .first-text {
+                    font-weight: 600;
+                    font-family: $fontFamily;
+                    margin: 0px;
+
+                }
+
+                .second-text {
+                    font-size: 12px;
+                    color: gray;
+                    margin: 0px;
+                }
+
+                .right-text {
+                    color: #00AA51;
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+            }
+
+        }
+
+        .wallet-right-side {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.13) 0px 3px 6px;
+            border-radius: 10px;
+            height: 100%;
+            padding: 20px;
+
+            .text-area {
+
+                margin-top: 40px;
+
+                .dec {
+                    font-size: 13px;
+                    font-family: $fontFamily;
+                    color: gray;
+                    padding: 10px 10px;
+                    background-color: #F5F7F9;
+                    border-radius: 10px;
+                }
+
+            }
+
+            .selet-network {
+                p {
+                    font-family: $fontFamily;
+                    color: gray;
+                    font-size: 13px;
+                }
+
+                .selet-network-button {
+                    width: 100%;
+                    display: flex;
+                    flex-flow: wrap;
+                    justify-content: space-between;
+                    gap: 10px;
+
+                    button {
+                        border: 1px solid gray;
+                        width: 48%;
+                        height: 40px;
+                        border-radius: 10px;
+                        font-family: $fontFamily;
+                        cursor: pointer;
+                    }
+
+                    .active-button {
+                        background-color: black;
+                        color: #fff;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .wellate-numbers {
+                display: flex;
+                flex-flow: wrap;
+                justify-content: center;
+                gap: 20px;                
+
+                .wellate-default {
+                    padding: 7px 18px;
+                    border: 1px solid gray;
+                    border-radius: 100px;
+                    cursor: pointer;
+                    font-family: $fontFamily;
+                    margin: 0px;
+                }
+
+                .active-number {
+                    background-color: black;
+                    color: #ffff;
+                    font-weight: 600;
+                }
+            }
+
+            .credits {
+                font-family: $fontFamily;
+                color: gray !important;
+            }
+
+            .ant-input-affix-wrapper {
+                box-shadow: none !important;
+                border: 1px solid gray !important;
+                height: 40px !important;
+            }
+
+            .wellate-buttons {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+
+                .deposit {
+                    background-color: #F3F3F3;
+                    padding: 15px 40px;
+                    border: none;
+                    border-radius: 100px;
+                    cursor: pointer;
+                    font-size: larger;
+
+                }
+
+                .activeButton {
+                    background-color: #0094dc;
+                    color: #fff;
+                    font-size: larger;
+                }
+            }
+        }
+    }
+}

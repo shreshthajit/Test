@@ -1,0 +1,213 @@
+@import "../../GeneralStyle/variables.scss";
+
+.home {
+  display: flex;
+  justify-content: center;
+
+  .home-box {
+    width: 100%;
+
+    .filter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f4f4;
+      border-radius: 100px !important;
+      cursor: pointer;
+      height: 40px;
+    }
+
+    .learn {
+      height: 50px;
+      background-color: #f4f4f4;
+      text-align: center;
+      color: #1994c8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      margin-top: 50px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-family: $fontFamily;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    .ant-select-selector {
+      height: 40px !important;
+      border: 1px solid #d4cfcc !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      border-radius: 100px !important;
+      width: fit-content !important;
+      background-color: #f4f4f4;
+      box-shadow: none !important;
+    }
+
+    .title-tabs {
+      display: flex;
+      gap: 10px;
+
+      @media screen and (max-width: 900px) {
+        width: 100%;
+        overflow-x: scroll;
+      }
+
+      // overflow-x: scroll;
+      .title-tab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        padding: 0px 10px;
+        background-color: #f4f4f4;
+        border-radius: 100px;
+        gap: 10px;
+        border: 1px solid #f4f4f4;
+        cursor: pointer;
+        font-family: $fontFamily;
+        width: fit-content;
+
+        &:hover {
+          background-color: #fff;
+          border: 1px solid #000000;
+        }
+
+        .title {
+          margin: 0px;
+          font-size: 14px;
+          font-family: $fontFamily;
+        }
+
+        .title1 {
+          margin: 0px;
+          font-size: 14px;
+          font-family: $fontFamily;
+
+          @media screen and (max-width: 900px) {
+            width: 200px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .card {
+      padding: 0px !important;
+      display: flex;
+      // align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      height: auto;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .title-text {
+        margin-top: 0px;
+        font-weight: 600;
+        font-family: $fontFamily;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Number of lines to display */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        white-space: normal; /* This should be 'normal' to allow text to break onto two lines */
+        text-overflow: ellipsis;
+      }
+    }
+
+    .card-bottom {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+
+      .card-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          width: 20px;
+        }
+
+        .left-text {
+          margin: 0%;
+          font-weight: 500;
+          padding-top: 2px;
+        }
+      }
+
+      // .card-right {
+      //     display: flex;
+      //     align-items: center;
+      //     gap: 10px;
+
+      .right-text1 {
+        color: #6f5bcb;
+        font-weight: 500;
+        margin: 0%;
+        background-color: #edebf8;
+        padding: 7px 20px;
+        border-radius: 100px;
+        font-family: $fontFamily;
+      }
+
+      .right-text2 {
+        color: #d762ae;
+        background-color: #fae9f4;
+        font-weight: 500;
+        margin: 0%;
+        padding: 7px 20px;
+        border-radius: 100px;
+        font-family: $fontFamily;
+      }
+
+      // }
+    }
+  }
+}
+
+.activetab {
+  background-color: #000000 !important;
+  color: #fff;
+
+  svg path {
+    fill: #fff;
+  }
+}
+
+.ant-carousel .slick-slider .slick-track {
+  display: flex !important;
+  gap: 10px !important;
+}
+
+.card-s {
+  .ant-card-bordered {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom: none !important;
+  }
+}
+
+.main-expire {
+  background-color: #e6eeff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  height: 30px;
+
+  .expire {
+    margin: 0;
+    color: #0858fe;
+    align-items: center;
+  }
+}

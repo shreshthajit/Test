@@ -1,0 +1,43 @@
+@import '../../GeneralStyle/variables.scss';
+
+
+.auth-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+
+    .ant-input-affix-wrapper {
+        height: 40px !important;
+        border: 1px solid #D4CFCC !important;
+        box-shadow: none !important;
+    }
+
+    button {
+        height: 40px;
+        background-color: $primaryColor;
+        border: none;
+        border-radius: 7px;
+        color: #fff;
+        font-size: large;
+        font-weight: 600;
+        font-family: $fontFamily;
+        cursor: pointer;
+
+        &:hover {
+            background-color: transparent;
+            border: 1px solid $primaryColor;
+            color: $primaryColor;
+        }
+    }
+
+    .auth-fields {
+        @media screen and (max-width:900px) {
+            width: 90%;
+        }
+
+        width: 70%;
+
+    }
+}

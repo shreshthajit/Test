@@ -1,0 +1,87 @@
+@import '../../GeneralStyle/variables.scss';
+
+
+.profile {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+
+    @media screen and (max-width:900px) {
+        margin-top: 20px;
+        flex-direction: column-reverse;
+    }
+
+    .left-side {
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.13) 0px 3px 6px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+
+        @media screen and (max-width:900px) {
+            width: 100%;
+        }
+
+        .left-side-inner {
+            width: 90%;
+        }
+
+        .ant-input-affix-wrapper {
+            box-shadow: none !important;
+            border: 1px solid gray !important;
+            height: 50px !important;
+        }
+
+        .submit-button {
+            background-color: black;
+            color: #fff;
+            font-weight: 600;
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    }
+
+    .right-side {
+        width: 30%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.13) 0px 3px 6px;
+        border-radius: 10px;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+
+        @media screen and (max-width:900px) {
+            width: 100%;
+        }
+
+        .right-side-inner {
+            width: 90%;
+        }
+
+
+        .profile-image {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid gray;
+            }
+
+            .profile-details {
+                text-align: center;
+
+                .profile-name{
+                    text-align: center;
+                }
+            }
+        }
+
+    }
+}

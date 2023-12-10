@@ -1,0 +1,24 @@
+.layout {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  // height: 99vh;
+
+  @media screen and (max-width: 900px) {
+  padding-bottom: 0px;
+  }
+
+  .layout-box {
+    width: 80%;
+
+    @media screen and (max-width: 900px) {
+      width: 90%;
+    }
+    @media screen and (max-width: 700px) {
+      height: 100vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      padding: 20px 10px;
+    }
+  }
+}
